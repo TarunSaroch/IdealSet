@@ -56,3 +56,11 @@ Some rows have multiple missing values across different columns (e.g., only `Nam
 
 ### 4. Duplicate Records
 The dataset contains duplicate rows, either exact copies or near-duplicates with minor variations (e.g., same `Name` and `Email` but different `ID`).
+
+### 5. Redundant Features
+Columns `Income` (in USD) and `Income_in_Thousand` (income divided by 1,000). One column is a scaled version of the other, making it redundant.
+
+Columns `Height`and `Weight`, contributes to `BMI`. It can be calculated directly from `Height` and `Weight`, making it unnecessary unless provided explicitly.
+.
+
+
